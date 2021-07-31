@@ -6,6 +6,9 @@
 ## This program is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU Affero General Public License.
 
+## More information about your rights under the AGPL 3.0
+## Please see: https://www.gnu.org/licenses/agpl-3.0.en.html
+
 ## This program is distributed in the hope that it will be useful,
 ## but WITHOUT ANY WARRANTY; without even the implied warranty of
 ## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -51,9 +54,9 @@ print("A quickly hacked-together at-home tool by Lee Ward (l.ward@netwkr.net)")
 print("\n")
 print("ShoPars3 Copyright (c)2018 Lee Ward")
 print("This program comes with ABSOLUTELY NO WARRANTY.")
-print("For information, please visit gnu.org/licenses/gpl-3.0.en.html")
+print("For information, please visit gnu.org/licenses/agpl-3.0.en.html")
 print("This is free software, and you are welcome to redistribute it")
-print("under certain conditions under the GPL v3.")
+print("under certain conditions under the AGPL v3.")
 print("\n")
 print("------======= TASK BEGIN =======------")
 print("\n")
