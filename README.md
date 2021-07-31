@@ -10,7 +10,7 @@ It's designed to be run using cron, or the Windows Task Scheduler at a time freq
 On Windows, invoke the Shodan API using...
 C:\Projects\shodan>shodan parse --fields ip_str,hostnames,transport,port,timestamp,data,title,ssl.cert,ssl.cipher,ssl.versions --separator ³ data.json.gz > data.csv
 
-ShoPars3 will take data.csv as its input. It has no arguments.
+ShoPars3 will take data.csv as its input, and uses ³ as its delimiter as some Shodan output can include ',' which breaks things. It has no arguments.
 
 # Dependencies
 - Python 3.6 (tested on Windows and Ubuntu)
