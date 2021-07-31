@@ -4,30 +4,17 @@
 ## v0.6 ready 09/09/2018
 
 ## This program is free software: you can redistribute it and/or modify
-## it under the terms of the GNU General Public License as published by
-## the Free Software Foundation, either version 3 of the License, or
-## (at your option) any later version.
+## it under the terms of the GNU Affero General Public License.
 
 ## This program is distributed in the hope that it will be useful,
 ## but WITHOUT ANY WARRANTY; without even the implied warranty of
 ## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ## GNU General Public License for more details.
 
-## You should have received a copy of the GNU General Public License
-## along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 ## Note: I'm not a developer, I'm an IT Security Officer in my day job and an IT engineer at all other times.
 ## Code quality wasn't what I was going for when I made this, I just needed a quick solution so I could
 ## quickly browse Shodan data for changes to networks I was interested in learning about the infrastructure in use.
 ## I'm inexperienced in Python, so please forgive the mess!
-
-## Disclaimer: Use of this code means you accept the risks that comes with running it. It could delete files,
-## your entire hard drive or you, set your computer, house, or business premises on fire. It could also kill people,
-## or cause serious injury. Another possible risk is that it might financially ruin you, or others. These weren't
-## intended of course, this was developed to parse data and shove it in to MySQL/MariaDB, not murder or destruction,
-## but you might do something to the code which causes it to believe that this course of action is OK.
-## Regardless of what happens, your use of this code means you acknowledge that Lee Ward (netwkr.net),
-## the author of this code holds no responsibility for what might happen during your use of this code.
 
 ## commandline used to acquire data in a compatible format, using the Shodan Python CLI:
 ## C:\Projects\shodan>shodan parse --fields ip_str,hostnames,transport,port,timestamp,data,title,ssl.cert,ssl.cipher,ssl.versions --separator ³ data.json.gz > data.csv
