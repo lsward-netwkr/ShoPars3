@@ -4,6 +4,14 @@ Shodan to MySQL parser. Python-based, it takes output from Shodan.io and places 
 # Purpose
 This was created in 2018, and was my second foray in to Python development to fulfil a need in my job. I am obviously by no means an expert, but this code will be slightly revamped in the coming weeks as free time comes up to ensure that future users can simply add their credentials for Shodan API and their MySQL server, and the script will handle everything else, checking the table exists (and if not, creating it), connecting to and downloading data from Shodan, and then begin inserting results in to MySQL. 
 
+# Usage
+It's designed to be run using cron, or the Windows Task Scheduler at a time frequency of your choosing. To ensure that you aren't eating through your API credits however, be sparing and maybe set it to run every 6 hours. 
+
+On Windows, invoke the Shodan API using...
+C:\Projects\shodan>shodan parse --fields ip_str,hostnames,transport,port,timestamp,data,title,ssl.cert,ssl.cipher,ssl.versions --separator ³ data.json.gz > data.csv
+
+ShoPars3 will take data.csv as its input. It has no arguments.
+
 # Dependencies
 - Python 3.6 (tested on Windows and Ubuntu)
 - Shodan connector for Python (install with: pip install shodan)
